@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Briefing de Projeto — Kernely</title>
+<meta name="description" content="Prepare-se para a nossa reunião técnica. Preencha os detalhes do seu projeto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=14">
+<meta name="theme-color" content="#121214">
+
+<!-- DADOS ESTRUTURADOS (SEO & GEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://kernely.com.br/#organization",
+  "name": "Kernely",
+  "alternateName": "Kernely Engenharia Web",
+  "slogan": "Code that matters.",
+  "url": "https://kernely.com.br/",
+  "logo": "https://kernely.com.br/imagens/logo-kernely.png",
+  "image": "https://kernely.com.br/imagens/capa-og.jpg",
+  "description": "Engenharia de software focada em alta performance. Desenvolvemos Sistemas Web com painéis hierárquicos, Aplicações Desktop executáveis e Sites Otimizados para conversão.",
+  "email": "kernelyltda@gmail.com",
+  "areaServed": "BR",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-11-99562-0111",
+    "email": "kernelyltda@gmail.com",
+    "contactType": "Atendimento Comercial",
+    "areaServed": "BR",
+    "availableLanguage": "Portuguese"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desenvolvimento de Sistemas Web e Dashboards"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desenvolvimento de Aplicações Desktop Executáveis"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Criação de Landing Pages e Sites Institucionais"
+      }
+    }
+  ],
+  "knowsAbout": [
+    "Desenvolvimento Web",
+    "Sites Institucionais",
+    "Landing Pages de Alta Conversão",
+    "Sistemas Web e Dashboards",
+    "Aplicações Desktop Executáveis",
+    "SEO",
+    "GEO (Generative Engine Optimization)"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/kernely",
+    "https://github.com/kernelyltda",
+    "https://linkedin.com/company/kernely"
+  ]
+}
+</script>
+</head>
+<body style="background: var(--bg); min-height: 100vh; display: flex; flex-direction: column;">
+
+<div class="grain"></div>
+
+<!-- HEADER MINIMALISTA (Sem menu para evitar fugas) -->
+<header style="position: relative; border-bottom: none; padding: 24px 0; background: transparent;">
+  <div class="wrap" style="display: flex; justify-content: center;">
+    <a class="brand" href="/">
+      <img src="imagens/logo-kernely.png" alt="Logo Kernely" style="height: 45px;">
+    </a>
+  </div>
+</header>
+
+<main style="flex: 1; display: flex; align-items: center; padding: 40px 0 80px;">
+  <div class="wrap" style="width: 100%; max-width: 760px;">
+    
+    <div class="briefing-container">
+      <div class="briefing-head">
+        <span class="eyebrow" style="justify-content: center; margin-bottom: 16px;">alinhamento técnico</span>
+        <h1 style="font-family: var(--display); font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; color: #FFF; text-align: center; margin-bottom: 12px; line-height: 1.2;">
+          Prepare-se para a nossa reunião.
+        </h1>
+        <p style="color: var(--muted); text-align: center; font-size: 0.95rem; line-height: 1.6; max-width: 500px; margin: 0 auto 40px;">
+          Para que a nossa call seja 100% focada em soluções, precisamos entender o cenário atual e os objetivos da sua empresa.
+        </p>
+      </div>
+
+      <!-- FORMULÁRIO DE BRIEFING -->
+      <form id="briefing-form" class="briefing-form">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="b-nome">Seu Nome / Cargo <span class="req">*</span></label>
+            <input type="text" id="b-nome" placeholder="Ex: João Silva - Diretor" required>
+          </div>
+          <div class="form-group">
+            <label for="b-empresa">Nome da Empresa <span class="req">*</span></label>
+            <input type="text" id="b-empresa" placeholder="Sua marca" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="b-tipo">Qual é o escopo central do projeto? <span class="req">*</span></label>
+          <div class="custom-select-wrapper">
+            <select id="b-tipo" required>
+              <option value="" disabled selected>Selecione uma opção estrutural...</option>
+              <option value="Landing Page / Site Institucional">Site Institucional / Landing Page de Vendas</option>
+              <option value="Sistema de Gestão (Acessos Hierárquicos / Relatórios)">Sistema Web (Painéis, Acessos Hierárquicos, Relatórios)</option>
+              <option value="Aplicação Desktop / Operação de Alta Carga">Aplicação Desktop (Operação local, automações, monitoramento)</option>
+              <option value="Ainda não tenho certeza">Ainda não tenho certeza, preciso de consultoria</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="b-desafio">Qual é o maior desafio ou gargalo que esse projeto vai resolver? <span class="req">*</span></label>
+          <textarea id="b-desafio" rows="4" placeholder="Ex: Nossos clientes acham nosso site confuso / Precisamos unificar nossos relatórios gerenciais em um só painel..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="b-referencias">Links de referências ou concorrentes (Opcional)</label>
+          <textarea id="b-referencias" rows="2" placeholder="Cole aqui os links de sites ou sistemas que você admira visualmente ou funcionalmente."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="b-prazo">Expectativa de Lançamento</label>
+            <div class="custom-select-wrapper">
+              <select id="b-prazo">
+                <option value="Urgente (Menos de 30 dias)">Urgente (Menos de 30 dias)</option>
+                <option value="Normal (1 a 2 meses)" selected>Normal (1 a 2 meses)</option>
+                <option value="Planejamento (Mais de 3 meses)">Planejamento (Mais de 3 meses)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 18px; font-size: 1.05rem; margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 10px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Enviar Briefing e Iniciar Call
+        </button>
+
+      </form>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Lógica para capturar os dados do formulário e enviar pelo WhatsApp formatado
+  document.getElementById('briefing-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Impede o recarregamento da página
+
+    const nome = document.getElementById('b-nome').value;
+    const empresa = document.getElementById('b-empresa').value;
+    const tipo = document.getElementById('b-tipo').value;
+    const desafio = document.getElementById('b-desafio').value;
+    const referencias = document.getElementById('b-referencias').value || "Nenhuma informada.";
+    const prazo = document.getElementById('b-prazo').value;
+
+    const mensagem = `*NOVO BRIEFING RECEBIDO* ⚡%0A%0A` +
+                     `*Nome:* ${nome}%0A` +
+                     `*Empresa:* ${empresa}%0A` +
+                     `*Escopo Técnico:* ${tipo}%0A` +
+                     `*Prazo Esperado:* ${prazo}%0A%0A` +
+                     `*O Desafio / Gargalo:*%0A${desafio}%0A%0A` +
+                     `*Referências:*%0A${referencias}%0A%0A` +
+                     `_Aguardo nossa call!_`;
+
+    // Redireciona para o WhatsApp com os dados preenchidos
+    window.open(`https://wa.me/5511995620111?text=${mensagem}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
