@@ -41,8 +41,8 @@ if (overlay) {
     // Ignora links vazios, links externos ou links que são APENAS âncoras na mesma tela
     if (!href || href.startsWith('#') || link.target === '_blank') return;
     
-    // A Regex agora aceita arquivos .html e também âncoras acopladas (ex: servicos.html#seo-geo)
-    if (!/^[a-zA-Z0-9_-]+\.html(#.*)?$/.test(href)) return;
+    // A Regex agora aceita URLs limpas (ex: /servicos) e âncoras (ex: /servicos#seo-geo)
+    if (!/^(\/?[a-zA-Z0-9_-]+)(\.html)?(#.*)?$/.test(href) && href !== '/') return;
 
     link.addEventListener('click', (e) => {
       // Descobre a página atual e a página de destino do link
